@@ -31,7 +31,7 @@ class CustomerResource extends Resource
                 Forms\Components\Card::make()->schema([
                     Forms\Components\TextInput::make("name")
                         ->required(),
-                    Forms\Components\TextInput::make("phone_name")
+                    Forms\Components\TextInput::make("phone_number")
                         ->required()
                         ->unique("customers","phone_number",ignorable: fn($record)=>$record)
                         ->rule("digits_between:9,10")
