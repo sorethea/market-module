@@ -5,6 +5,7 @@ namespace Modules\Market\Providers;
 use Filament\Facades\Filament;
 use Filament\Navigation\NavigationGroup;
 use Filament\PluginServiceProvider;
+use Modules\Market\Filament\Resources\MarketResource;
 use Spatie\LaravelPackageTools\Package;
 use Modules\Market\Filament\Pages\MarketPage;
 
@@ -15,7 +16,9 @@ class FilamentServiceProvider extends PluginServiceProvider
         return $module->isEnabled();
     }
     protected array $pages = [];
-    protected array $resources =[];
+    protected array $resources =[
+        MarketResource::class,
+    ];
     public function configurePackage(Package $package): void
     {
         $package->name('market');
