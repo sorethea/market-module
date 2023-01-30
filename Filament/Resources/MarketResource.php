@@ -17,7 +17,7 @@ class MarketResource extends Resource
 {
     protected static ?string $model = Market::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-collection';
+    protected static ?string $navigationIcon = 'heroicon-o-scale';
 
     protected static function getNavigationGroup(): ?string
     {
@@ -48,14 +48,14 @@ class MarketResource extends Resource
                 Tables\Actions\DeleteBulkAction::make(),
             ]);
     }
-    
+
     public static function getRelations(): array
     {
         return [
             //
         ];
     }
-    
+
     public static function getPages(): array
     {
         return [
@@ -63,5 +63,5 @@ class MarketResource extends Resource
             'create' => Pages\CreateMarket::route('/create'),
             'edit' => Pages\EditMarket::route('/{record}/edit'),
         ];
-    }    
+    }
 }
