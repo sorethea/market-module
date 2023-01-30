@@ -28,8 +28,27 @@ class CustomerResource extends Resource
     {
         return $form
             ->schema([
-                //
-            ]);
+                Forms\Components\Card::make()->schema([
+                    Forms\Components\TextInput::make("name")
+                        ->required(),
+                    Forms\Components\TextInput::make("phone_name")
+                        ->required()
+                        ->unique("customers","phone_number",ignorable: fn($record)=>$record)
+                        ->rule("digits_between:9,10")
+                        ->mask(fn(Forms\Components\TextInput\Mask $mask)=>$mask->pattern('{0}00 000-0000')),
+                    Forms\Components\TextInput::make("password")
+                        ->password()
+                        ->required()
+                        ->visibleOn("create")
+                        ->same("password_confirmation"),
+                    Forms\Components\TextInput::make("password_confirmation")
+                        ->password()
+                        ->visibleOn("create")
+                        ->required(),
+                    Forms\Components\SpatieMediaLibraryFileUpload::make("avatar")
+                        ->collection('avatar')->image(),
+                ])->columnSpan(2)->columns(2),
+            ])->columns(3);
     }
 
     public static function table(Table $table): Table
