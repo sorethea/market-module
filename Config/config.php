@@ -3,7 +3,7 @@
 return [
     'name' => 'Market',
     'navigation'=>[
-        'name' => 'Marketplace',
+        'name' => 'Marketplaces',
         'enabled' => true,
     ],
 ];

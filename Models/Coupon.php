@@ -5,7 +5,7 @@ namespace Modules\Market\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
-class Customer extends Model
+class Coupon extends Model
 {
     use HasFactory;
 
@@ -13,6 +13,6 @@ class Customer extends Model
     
     protected static function newFactory()
     {
-        return \Modules\Market\Database\factories\CustomerFactory::new();
+        return \Modules\Market\Database\factories\CouponFactory::new();
     }
 }

@@ -5,7 +5,7 @@ namespace Modules\Market\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
-class Market extends Model
+class Extra extends Model
 {
     use HasFactory;
 
@@ -13,6 +13,6 @@ class Market extends Model
     
     protected static function newFactory()
     {
-        return \Modules\Market\Database\factories\MarketFactory::new();
+        return \Modules\Market\Database\factories\ExtraFactory::new();
     }
 }

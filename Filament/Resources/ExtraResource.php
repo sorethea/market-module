@@ -2,9 +2,9 @@
 
 namespace Modules\Market\Filament\Resources;
 
-use Modules\Market\Filament\Resources\ProductResource\Pages;
-use Modules\Market\Filament\Resources\ProductResource\RelationManagers;
-use Modules\Market\Models\Product;
+use Modules\Market\Filament\Resources\ExtraResource\Pages;
+use Modules\Market\Filament\Resources\ExtraResource\RelationManagers;
+use Modules\Market\Models\Extra;
 use Filament\Forms;
 use Filament\Resources\Form;
 use Filament\Resources\Resource;
@@ -13,11 +13,11 @@ use Filament\Tables;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 
-class ProductResource extends Resource
+class ExtraResource extends Resource
 {
-    protected static ?string $model = Product::class;
+    protected static ?string $model = Extra::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-view-grid';
+    protected static ?string $navigationIcon = 'heroicon-o-document-add';
 
     protected static function getNavigationGroup(): ?string
     {
@@ -59,9 +59,9 @@ class ProductResource extends Resource
     public static function getPages(): array
     {
         return [
-            'index' => Pages\ListProducts::route('/'),
-            'create' => Pages\CreateProduct::route('/create'),
-            'edit' => Pages\EditProduct::route('/{record}/edit'),
+            'index' => Pages\ListExtras::route('/'),
+            'create' => Pages\CreateExtra::route('/create'),
+            'edit' => Pages\EditExtra::route('/{record}/edit'),
         ];
     }
 }
