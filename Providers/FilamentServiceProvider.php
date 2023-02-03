@@ -5,11 +5,11 @@ namespace Modules\Market\Providers;
 use Filament\Facades\Filament;
 use Filament\Navigation\NavigationGroup;
 use Filament\PluginServiceProvider;
-use Modules\Market\Filament\Resources\CouponResource;
-use Modules\Market\Filament\Resources\ExtraResource;
 use Modules\Market\Filament\Resources\PriceResource;
 use Modules\Market\Filament\Resources\ProductResource;
 use Modules\Market\Filament\Resources\ShopResource;
+use Modules\Utility\Filament\Resources\CouponResource;
+use Modules\Utility\Filament\Resources\ExtraResource;
 use Spatie\LaravelPackageTools\Package;
 
 class FilamentServiceProvider extends PluginServiceProvider
@@ -20,10 +20,7 @@ class FilamentServiceProvider extends PluginServiceProvider
     }
     protected array $pages = [];
     protected array $resources =[
-        CouponResource::class,
         ProductResource::class,
-        ExtraResource::class,
-        PriceResource::class,
         ShopResource::class,
 
     ];
