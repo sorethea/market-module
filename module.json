@@ -9,7 +9,7 @@
         "Modules\\Market\\Providers\\MarketServiceProvider"
     ],
     "files": [],
-    "require": [
+    "requires": [
         "Core",
         "Utility"
     ]
