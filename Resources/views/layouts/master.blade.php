@@ -16,7 +16,7 @@
         <!-- Favicons -->
         <link rel="apple-touch-icon" href="{{asset('img/favicon180.png')}}" sizes="180x180">
         <link rel="icon" href="{{asset('img/favicon32.png')}}" sizes="32x32" type="image/png">
-        <link rel="icon" href="{{assets('img/favicon16.png')}}" sizes="16x16" type="image/png">
+        <link rel="icon" href="{{asset('img/favicon16.png')}}" sizes="16x16" type="image/png">
 
         <!-- Google fonts-->
 
