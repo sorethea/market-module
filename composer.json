@@ -1,6 +1,7 @@
 {
     "name": "sorethea/market-module",
     "description": "",
+    "type": "laravel-module",
     "authors": [
         {
             "name": "Sorethea OK",
