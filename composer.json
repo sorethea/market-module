@@ -1,0 +1,25 @@
+{
+    "name": "sorethea/market-module",
+    "description": "",
+    "authors": [
+        {
+            "name": "Sorethea OK",
+            "email": "sorethea@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\Market\\Providers\\MarketServiceProvider"
+            ],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Market\\": ""
+        }
+    }
+}
