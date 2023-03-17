@@ -10,7 +10,9 @@
        {{-- {{ module_vite('build-market', 'Resources/assets/sass/app.scss') }} --}}
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" >
         <!-- style css for this template -->
-        {{ module_vite('build-market', 'Resources/assets/scss/style.css') }}
+        <link rel="stylesheet" href="{{ mix('scss/style.css') }}">
+
+{{--        {{ module_vite('build-market', 'Resources/assets/scss/style.css') }}--}}
 {{--        <link href="assets/scss/style.css" rel="stylesheet" id="style">--}}
 
     </head>
@@ -18,14 +20,22 @@
         @yield('content')
 
         {{-- Laravel Vite - JS File --}}
-        {{ module_vite('build-market', 'Resources/assets/js/jquery-3.3.1.min.js') }}
+{{--        {{ module_vite('build-market', 'Resources/assets/js/jquery-3.3.1.min.js') }}
         {{ module_vite('build-market', 'Resources/assets/js/popper.min.js') }}
         {{ module_vite('build-market', 'Resources/assets/vendor/bootstrap-5/js/bootstrap.bundle.min.js') }}
 
         {{ module_vite('build-market', 'Resources/assets/js/main.js') }}
         {{ module_vite('build-market', 'Resources/assets/js/color-scheme.js') }}
 
-        {{ module_vite('build-market', 'Resources/assets/js/app.js') }}
+        {{ module_vite('build-market', 'Resources/assets/js/app.js') }}--}}
+
+
+        <script src="{{ mix('js/jquery-3.3.1.min.js') }}"></script>
+        <script src="{{ mix('js/popper.min.js') }}"></script>
+        <script src="{{ mix('js/vendor/bootstrap-5/js/bootstrap.bundle.min.js') }}"></script>
+        <script src="{{ mix('js/main.js') }}"></script>
+        <script src="{{ mix('js/color-scheme.js') }}"></script>
+        <script src="{{ mix('js/app.js') }}"></script>
 
         {{--        <!-- Required jquery and libraries -->--}}
 {{--        <script src="assets/js/jquery-3.3.1.min.js"></script>--}}
