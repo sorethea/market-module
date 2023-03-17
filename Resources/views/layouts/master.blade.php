@@ -16,7 +16,7 @@
 {{--        <link href="assets/scss/style.css" rel="stylesheet" id="style">--}}
 
     </head>
-    <body>
+    <body class="body-scroll theme-red">
         @yield('content')
 
         {{-- Laravel Vite - JS File --}}
