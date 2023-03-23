@@ -10,6 +10,6 @@ class UninstallServiceProvider extends BaseUninstallServiceProvider
     public function uninstall()
     {
         $seed = new MarketDatabaseSeeder();
-        //$seed->rollback();
+        $seed->rollback();
     }
 }
