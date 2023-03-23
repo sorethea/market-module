@@ -12,15 +12,15 @@
 {{--                <h5>OneUIUX<br /><span class="text-secondary fw-light">Shopping</span></h5>--}}
 {{--            </div>--}}
 {{--        </div>--}}
-{{--        <div class="col-auto">--}}
+        <div class="col-auto">
 {{--            <a href="notifications.html" target="_self" class="btn btn-light btn-44 btn-rounded">--}}
 {{--                <i class="bi bi-bell"></i>--}}
 {{--                <span class="count-indicator"></span>--}}
 {{--            </a>--}}
-{{--            <a href="profile.html" target="_self" class="btn btn-light btn-44 btn-rounded ms-2">--}}
-{{--                <i class="bi bi-person-circle"></i>--}}
-{{--            </a>--}}
-{{--        </div>--}}
+            <a href="market/cart" target="_self" class="btn btn-light btn-44 btn-rounded ms-2">
+                <i class="bi bi-cart"></i>
+            </a>
+        </div>
     </div>
 </header>
 <!-- Header ends -->
