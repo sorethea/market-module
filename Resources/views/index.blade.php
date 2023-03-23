@@ -1,26 +1,7 @@
 @extends('market::layouts.master')
 
 @section('content')
-    <!-- loader section -->
-    <div class="container-fluid loader-wrap">
-        <div class="row h-100">
-            <div class="col-10 col-md-6 col-lg-5 col-xl-3 mx-auto text-center align-self-center">
-                <div class="circular-loader">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-                <p class="mt-4"><span class="text-secondary">Shopping Experience Unlimited</span><br><strong>Please
-                        wait...</strong></p>
-            </div>
-        </div>
-    </div>
-    <!-- loader section ends -->
+
 
     <!-- Sidebar main menu -->
     <div class="sidebar-wrap  sidebar-overlay">
