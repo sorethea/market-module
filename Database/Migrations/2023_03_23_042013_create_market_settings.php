@@ -12,6 +12,7 @@ class CreateMarketSettings extends SettingsMigration
 
     public function down(): void
     {
+        $this->migrator->delete('market.title');
         $this->migrator->delete('market.loading_msg');
     }
 }

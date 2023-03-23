@@ -45,6 +45,9 @@
     <!-- loader section -->
         @include("market::components.loading")
     <!-- loader section ends -->
+    <!-- menu section -->
+        @include("market::components.menu")
+    <!-- menu section ends -->
         @yield('content')
 
         <script src="{{ asset('modules/market/js/jquery-3.3.1.min.js') }}"></script>
