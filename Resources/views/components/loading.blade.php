@@ -11,7 +11,7 @@
                 <div></div>
                 <div></div>
             </div>
-            <p class="mt-4"><span class="text-secondary">HiEAT, experience with the best delivery services.</span><br><strong>Please
+            <p class="mt-4"><span class="text-secondary">{{app(\Modules\Market\Settings\MarketSetting::class)->loading_msg}}</span><br><strong>Please
                     wait...</strong></p>
         </div>
     </div>
