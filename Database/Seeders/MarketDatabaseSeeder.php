@@ -16,6 +16,13 @@ class MarketDatabaseSeeder extends Seeder
     {
         Model::unguard();
 
-        // $this->call("OthersTableSeeder");
+        $this->call(PermissionTableSeeder::class);
+    }
+
+    public function rollback()
+    {
+        $permissionTableSeeder = new PermissionTableSeeder();
+        $permissionTableSeeder->rollback();
+
     }
 }
