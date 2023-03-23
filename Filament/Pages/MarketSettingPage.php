@@ -8,6 +8,7 @@ use Filament\Forms\Components\Repeater;
 use Filament\Forms\Components\TextInput;
 use Filament\Pages\SettingsPage;
 use Modules\HR\Settings\HRSetting;
+use Modules\Market\Settings\MarketSetting;
 
 class MarketSettingPage extends SettingsPage
 {
@@ -31,7 +32,7 @@ class MarketSettingPage extends SettingsPage
         return config('market.setting-navigation.name');
     }
 
-    protected static string $settings = HRSetting::class;
+    protected static string $settings = MarketSetting::class;
 
     protected static function shouldRegisterNavigation(): bool
     {
