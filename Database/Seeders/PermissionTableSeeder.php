@@ -52,45 +52,43 @@ class PermissionTableSeeder extends Seeder
             }
         }
         $user = User::firstOrCreate([
-            "name"=>"Employee",
-            "email"=>"employee@demo.com",
+            "name"=>"Customer",
+            "email"=>"customer@demo.com",
             "password"=>Hash::make("12345678"),
         ]);
-        $user->assignRole($employee);
-        $company = Company::firstOrCreate([
-            "name"=>"Demo",
-            "abbr"=>"DEMO",
+        $user->assignRole($customer);
+        $user1 = User::firstOrCreate([
+            "name"=>"Vendor",
+            "email"=>"vendor@demo.com",
+            "password"=>Hash::make("12345678"),
         ]);
-        Employee::firstOrCreate([
-            "first_name"=>"Employee",
-            "last_name"=>"Demo",
-            "gender"=>"male",
-            "is_system_user"=>true,
-            "date_of_birth"=>"2000-01-01",
-            "date_of_joining"=>"2020-01-01",
-            "company_id"=>$company->id,
-            "user_id"=>$user->id,
-            "properties"=>[
-                "email"=>"employee@demo.com",
-                "password"=>"12345678"
-            ]
-        ]);
+        $user1->assignRole($vendor);
     }
 
     public function rollback(){
         Model::unguard();
         try{
-            $user = User::where("email","employee@demo.com")->first();
+            $user = User::where("email","customer@demo.com")->first();
             if(!empty($user)){
-                $user->removeRole("employee");
+                $user->removeRole("customer");
                 $user->delete();
             }
-            $role = Role::where("name","employee")->first();
+            $role = Role::where("name","customer")->first();
             if(!empty($role)){
                 $role->permissions()->detach();
                 $role->delete();
             }
-            Permission::where("module","hr")->delete();
+            $user1 = User::where("email","vendor@demo.com")->first();
+            if(!empty($user1)){
+                $user1->removeRole("vendor");
+                $user1->delete();
+            }
+            $role1 = Role::where("name","vendor")->first();
+            if(!empty($role1)){
+                $role1->permissions()->detach();
+                $role1->delete();
+            }
+            Permission::where("module","market")->delete();
         }catch (\Throwable $exception){
             info($exception->getMessage());
         }
