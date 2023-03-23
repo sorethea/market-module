@@ -1,5 +1,5 @@
 <?php
-namespace Modules\Market\Database\Settings;
+
 use Spatie\LaravelSettings\Migrations\SettingsMigration;
 
 class CreateMarketSettings extends SettingsMigration
