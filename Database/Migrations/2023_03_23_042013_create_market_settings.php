@@ -6,6 +6,7 @@ class CreateMarketSettings extends SettingsMigration
 {
     public function up(): void
     {
+        $this->migrator->add('market.title',"HiEAT");
         $this->migrator->add('market.loading_msg',"HiEAT, experience with the best delivery services.");
     }
 
