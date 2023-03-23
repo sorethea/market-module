@@ -5,6 +5,7 @@ namespace Modules\Market\Providers;;
 use Filament\Facades\Filament;
 use Filament\Navigation\NavigationGroup;
 use Filament\PluginServiceProvider;
+use Modules\Market\Filament\Pages\MarketSettingPage;
 use Spatie\LaravelPackageTools\Package;
 
 class ResourceServiceProvider extends PluginServiceProvider
@@ -13,7 +14,9 @@ class ResourceServiceProvider extends PluginServiceProvider
         $module = \Lam::find('market');
         return $module->isEnabled();
     }
-    protected array $pages = [];
+    protected array $pages = [
+        MarketSettingPage::class,
+    ];
     protected array $resources =[];
     public function configurePackage(Package $package): void
     {
