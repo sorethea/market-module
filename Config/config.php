@@ -18,22 +18,22 @@ return [
         'sidebar'=>[
             'home'=>[
                 'name'=>'Home',
-                'url'=>'/',
+                'url'=>'/market',
                 'icon'=>'shop',
             ],
             'order'=>[
                 'name'=>'Orders',
-                'url'=>'/orders',
+                'url'=>'/market/orders',
                 'icon'=>'receipt',
             ],
             'favorite'=>[
                 'name'=>'Favorites',
-                'url'=>'/favorites',
+                'url'=>'/market/favorites',
                 'icon'=>'heart',
             ],
             'address'=>[
                 'name'=>'Addresses',
-                'url'=>'/addresses',
+                'url'=>'/market/addresses',
                 'icon'=>'pin-map',
             ]
         ]
