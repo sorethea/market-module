@@ -35,6 +35,11 @@ return [
                 'name'=>'Addresses',
                 'url'=>'/market/addresses',
                 'icon'=>'pin-map',
+            ],
+            'setting'=>[
+                'name'=>'Settings',
+                'url'=>'/market/settings',
+                'icon'=>'gear',
             ]
         ]
     ]
