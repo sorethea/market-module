@@ -2,6 +2,7 @@
 
 namespace Modules\Market\Providers;
 
+use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
 use Modules\Market\View\Components\nav\item;
 
@@ -15,7 +16,7 @@ class ComponentServiceProvider extends ServiceProvider
     public function boot()
     {
         //\Blade::components(["item"=>item::class],"market-nav-");
-        \Blade::component(item::class,"item","market-nav-");
+        Blade::component(item::class,"item","market-nav-");
     }
 
     /**
