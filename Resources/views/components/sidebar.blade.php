@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-12">
             <ul class="nav nav-pills">
-                @foreach(config('market::mobile.sidebar') as $value)
+                @foreach(config('market.mobile.sidebar') as $value)
                     <x-market-nav-item :name="$value->name" :icon="$value->icon" :url="$value->url" />
                 @endforeach
             </ul>
