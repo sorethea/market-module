@@ -39,7 +39,6 @@
 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" >
 
-
     </head>
     <body class="body-scroll theme-red">
     <!-- loader section -->
@@ -132,6 +131,13 @@
         <script src="{{ asset('modules/market/js/vendor/bootstrap-5/js/bootstrap.bundle.min.js') }}"></script>
         <script src="{{ asset('modules/market/js/main.js') }}"></script>
         <script src="{{ asset('modules/market/js/color-scheme.js') }}"></script>
+        <script src="{{ asset('modules/market/vendor/chart-js-3.3.1/chart.min.js')}}"></script>
+        <script src="{{ asset('modules/market/vendor/progressbar-js/progressbar.min.js')}}"></script>
+        <script src="{{ asset('modules/market/vendor/swiperjs-6.6.2/swiper-bundle.min.js')}}"></script>
+        <script src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+        <script src="{{ asset('modules/market/vendor/daterangepicker/daterangepicker.js')}}"></script>
+        <script src="{{ asset('modules/market/vendor/nouislider/nouislider.min.js')}}"></script>
+        <script src="{{ asset('modules/market/js/pwa-services.js')}}"></script>
         <script src="{{ asset('modules/market/js/app.js') }}"></script>
     </body>
 </html>
