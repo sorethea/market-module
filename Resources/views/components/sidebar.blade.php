@@ -1,20 +1,5 @@
 <div class="sidebar ">
     <!-- user information -->
-    <div class="row">
-        <div class="col-12 profile-sidebar">
-            <div class="row">
-                <div class="col-auto">
-                    <figure class="avatar avatar-100 rounded-20 shadow-sm">
-                        <img src="assets/img/user1.jpg" alt="">
-                    </figure>
-                </div>
-                <div class="col px-0 align-self-center">
-                    <h5 class="mb-2">John Winsels</h5>
-                    <p class="text-muted size-12">New York City,<br />United States</p>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- user emnu navigation -->
     <div class="row">
