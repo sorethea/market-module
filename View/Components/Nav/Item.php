@@ -6,16 +6,20 @@ use Illuminate\View\Component;
 
 class Item extends Component
 {
-    private string $url;
+    public string $url;
+    public string $name;
+    public string $icon;
 
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct($url)
+    public function __construct($url,$name,$icon="window")
     {
         $this->url = $url;
+        $this->name = $name;
+        $this->icon = $icon;
     }
 
     /**
