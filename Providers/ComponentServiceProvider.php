@@ -14,7 +14,8 @@ class ComponentServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        \Blade::components(["item"=>item::class],"market-nav-");
+        //\Blade::components(["item"=>item::class],"market-nav-");
+        \Blade::component(item::class,"item","market-nav");
     }
 
     /**
