@@ -2,6 +2,7 @@
 
 namespace Modules\Market\Providers;
 
+use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Database\Eloquent\Factory;
 use Modules\Market\View\Components\nav\item;
@@ -29,7 +30,7 @@ class MarketServiceProvider extends ServiceProvider
         $this->registerConfig();
         $this->registerViews();
         $this->loadMigrationsFrom(module_path($this->moduleName, 'Database/Migrations'));
-        \Blade::component('market-nav-item',item::class);
+        Blade::component('market-nav-item',item::class);
     }
 
     /**
