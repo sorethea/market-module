@@ -6,12 +6,18 @@ use Illuminate\View\Component;
 
 class Item extends Component
 {
+    /**
+     * @var string
+     */
     private string $url;
+    /**
+     * @var string
+     */
     private string $name;
     /**
      * @var string
      */
-    private mixed $icon;
+    private string $icon;
 
     /**
      * Create a new component instance.
