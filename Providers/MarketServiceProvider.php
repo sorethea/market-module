@@ -30,7 +30,6 @@ class MarketServiceProvider extends ServiceProvider
         $this->registerConfig();
         $this->registerViews();
         $this->loadMigrationsFrom(module_path($this->moduleName, 'Database/Migrations'));
-        Blade::component('market-nav-item',item::class);
     }
 
     /**
@@ -43,7 +42,7 @@ class MarketServiceProvider extends ServiceProvider
         $this->app->register(RouteServiceProvider::class);
         $this->app->register(ResourceServiceProvider::class);
         $this->app->register(AuthServiceProvider::class);
-        //$this->app->register(ComponentServiceProvider::class);
+        $this->app->register(ComponentServiceProvider::class);
     }
 
     /**
