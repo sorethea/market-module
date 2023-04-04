@@ -5,13 +5,7 @@
     <div class="row">
         <div class="col-12">
             <ul class="nav nav-pills">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">
-                        <div class="avatar avatar-40 icon"><i class="bi bi-house-door"></i></div>
-                        <div class="col">Shop</div>
-                        <div class="arrow"><i class="bi bi-chevron-right"></i></div>
-                    </a>
-                </li>
+                <x-market-nav-item name="Shop" url="shop" ></x-market-nav-item>
 
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
