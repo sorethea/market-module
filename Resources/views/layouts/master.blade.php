@@ -53,7 +53,7 @@
         @yield('content')
     </main>
     <!-- Footer -->
-
+    @include("market::components.footer")
     <!-- Footer ends-->
 
     <!-- filter menu -->
