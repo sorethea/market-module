@@ -128,7 +128,7 @@
     <!-- Page ends-->
         <script src="{{ asset('modules/market/js/jquery-3.3.1.min.js') }}"></script>
         <script src="{{ asset('modules/market/js/popper.min.js') }}"></script>
-        <script src="{{ asset('modules/market/js/vendor/bootstrap-5/js/bootstrap.bundle.min.js') }}"></script>
+        <script src="{{ asset('modules/market/vendor/bootstrap-5/js/bootstrap.bundle.min.js') }}"></script>
         <script src="{{ asset('modules/market/js/main.js') }}"></script>
         <script src="{{ asset('modules/market/js/color-scheme.js') }}"></script>
         <script src="{{ asset('modules/market/vendor/chart-js-3.3.1/chart.min.js')}}"></script>
