@@ -4,7 +4,7 @@ namespace Modules\Market\Providers;
 
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
-use Modules\Market\View\Components\nav\item;
+use Modules\Market\View\Components\Nav\Item;
 
 class ComponentServiceProvider extends ServiceProvider
 {
