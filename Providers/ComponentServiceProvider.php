@@ -4,6 +4,7 @@ namespace Modules\Market\Providers;
 
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
+use Modules\Market\View\Components\Nav\Dropdown;
 use Modules\Market\View\Components\Nav\Item;
 
 class ComponentServiceProvider extends ServiceProvider
@@ -15,7 +16,10 @@ class ComponentServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        Blade::component("market-nav-item",Item::class);
+        Blade::components([
+            "nav-item"=>Item::class,
+            "nav-dropdown"=>Dropdown::class,
+        ],'market');
     }
 
     /**
