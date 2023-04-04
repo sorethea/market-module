@@ -5,7 +5,7 @@ namespace Modules\Market\Providers;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Database\Eloquent\Factory;
-use Modules\Market\View\Components\nav\item;
+use Modules\Market\View\Components\Nav\Item;
 
 class MarketServiceProvider extends ServiceProvider
 {

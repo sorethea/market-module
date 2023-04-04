@@ -1,10 +1,10 @@
 <?php
 
-namespace Modules\Market\View\Components\nav;
+namespace Modules\Market\View\Components\Nav;
 
 use Illuminate\View\Component;
 
-class item extends Component
+class Item extends Component
 {
     private string $url;
     private string $name;
