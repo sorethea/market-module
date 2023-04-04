@@ -7,28 +7,13 @@ use Illuminate\View\Component;
 class Item extends Component
 {
     /**
-     * @var string
-     */
-    private string $url;
-    /**
-     * @var string
-     */
-    private string $name;
-    /**
-     * @var string
-     */
-    private string $icon;
-
-    /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct(string $url,string $name,string $icon="window")
+    public function __construct()
     {
-        $this->url = $url;
-        $this->name = $name;
-        $this->icon = $icon;
+        //
     }
 
     /**
