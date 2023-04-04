@@ -5,7 +5,9 @@
     <div class="row">
         <div class="col-12">
             <ul class="nav nav-pills">
-                <x-market-nav-item url="market/message" name="Message" icon="chat-text"/>
+                @foreach(config('market::mobile.sidebar') as $value)
+                    <x-market-nav-item :name=$value->name :icon=$value->icon :url=$value->url />
+                @endforeach
             </ul>
         </div>
     </div>
