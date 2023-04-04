@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-12">
             <ul class="nav nav-pills">
-                <x-market-nav-item name="Shop" url="shop" ></x-market-nav-item>
+                <x-market-nav.item name="Shop" url="shop" ></x-market-nav.item>
 
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
