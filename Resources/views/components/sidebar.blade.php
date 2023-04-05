@@ -1,6 +1,6 @@
 <div class="sidebar ">
     <!-- user information -->
-    @include("market::components.profile-sidebar")
+    <x-market-nav-profile />
     <!-- user emnu navigation -->
     <div class="row">
         <div class="col-12">

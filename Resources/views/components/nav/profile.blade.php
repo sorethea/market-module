@@ -9,7 +9,7 @@
                 </div>
                 <div class="col px-0 align-self-center">
                     <h5 class="mb-2">{{Auth::user()->name}}</h5>
-                    <p class="text-muted size-12">New York City,<br />United States</p>
+                    <p class="text-muted size-12">{{Auth::user()->phone}}</p>
                 </div>
             </div>
         </div>

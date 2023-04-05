@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
 use Modules\Market\View\Components\Nav\Dropdown;
 use Modules\Market\View\Components\Nav\Item;
+use Modules\Market\View\Components\Nav\Profile;
 
 class ComponentServiceProvider extends ServiceProvider
 {
@@ -19,6 +20,7 @@ class ComponentServiceProvider extends ServiceProvider
         Blade::components([
             "nav-item"=>Item::class,
             "nav-dropdown"=>Dropdown::class,
+            "nav-profile"=>Profile::class,
         ],'market');
     }
 
