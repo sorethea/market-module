@@ -1,1 +1,1 @@
-@extends('market::layouts.master')
+@extends('market::layouts.auth')

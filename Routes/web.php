@@ -15,4 +15,5 @@ Route::prefix('market')->group(function() {
     Route::get('/', 'MarketController@index')->name('market.index');
     Route::get('/logout','AuthController@logout')->name('market.logout');
     Route::get('/login','AuthController@login')->name('market.login');
+    Route::get('/cart','CartController@index')->name('market.cart');
 });
