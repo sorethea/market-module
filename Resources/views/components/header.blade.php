@@ -2,11 +2,11 @@
 <header class="header position-fixed header-filled">
     <div>
         <div class="float-start">
-            <button type="button" class="btn btn-light btn-44 btn-rounded menu-btn">
+            <div type="button" class=" menu-btn">
                 <x-market-page-logo/>
-            </button>
-            <div class="logo-small">
-                <h5>HiEAT<br /><span class="text-secondary fw-light">The best delivery services</span></h5>
+                <div class="logo-small">
+                    <h5>HiEAT<br /><span class="text-secondary fw-light">The best delivery services</span></h5>
+                </div>
             </div>
         </div>
         <div class="float-end">

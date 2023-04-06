@@ -38,7 +38,7 @@
         <link rel="stylesheet" href="{{ asset('modules/market/scss/style.css') }}">
 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" >
-
+    @livewireStyles
     </head>
     <body class="body-scroll theme-red">
     <!-- loader section -->
@@ -95,5 +95,6 @@
         <script src="{{ asset('modules/market/vendor/nouislider/nouislider.min.js')}}"></script>
         <script src="{{ asset('modules/market/js/pwa-services.js')}}"></script>
         <script src="{{ asset('modules/market/js/app.js') }}"></script>
+    @livewireScripts
     </body>
 </html>
