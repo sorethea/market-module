@@ -42,7 +42,7 @@
     </head>
     <body class="body-scroll theme-red">
     <!-- loader section -->
-        <x-market-page-loading />
+{{--        <x-market-page-loading />--}}
     <!-- loader section ends -->
     <!-- menu section -->
         @include("market::components.menu")

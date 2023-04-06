@@ -30,7 +30,7 @@
 <body class="body-scroll d-flex flex-column h-100 theme-red" data-page="signin">
 
 <!-- loader section -->
-<x-market-page-loading />
+{{--<x-market-page-loading />--}}
 <!-- loader section ends -->
 
 <!-- Header -->
