@@ -1,1 +1,1 @@
-
+@extends('market::layouts.master')
