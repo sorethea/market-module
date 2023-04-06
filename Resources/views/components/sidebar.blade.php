@@ -8,6 +8,7 @@
                 @foreach(config('market.mobile.sidebar') as $value)
                     <x-market-nav-item :name="$value['name']" :icon="$value['icon']" :url="$value['url']" />
                 @endforeach
+                <x-market-nav-logout />
             </ul>
         </div>
     </div>
