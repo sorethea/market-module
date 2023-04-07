@@ -9,7 +9,6 @@ use Illuminate\Routing\Controller;
 class AuthController extends Controller
 {
     public function login(){
-
         return view('market::auth.login');
     }
 

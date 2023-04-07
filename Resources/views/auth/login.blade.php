@@ -1,4 +1,6 @@
 @extends('market::layouts.auth')
 @section('content')
-    <livewire:market::auth.login />
+    <main class="container-fluid h-100 ">
+        <livewire:market::auth.login />
+    </main>
 @endsection
