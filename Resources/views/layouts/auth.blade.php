@@ -39,9 +39,16 @@
     <div class="row">
         <x-market-page-brand/>
         <div class="col-auto">
-            <a href="signup.html" target="_self">
-                Sign up
-            </a>
+            @if($action == "login")
+                <a href="{{route("market.register")}}" target="_self">
+                    Sign Up
+                </a>
+            @else
+                <a href="{{route("market.login")}}" target="_self">
+                    Sign In
+                </a>
+            @endif
+
         </div>
     </div>
 </header>
